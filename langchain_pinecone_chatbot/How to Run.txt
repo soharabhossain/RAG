@@ -1,0 +1,31 @@
+
+You need to install all the libraries in the local machine as stated in the requirements.txt.
+
+# pip install -r requirements.txt
+
+Also install pinecone client as follows:
+
+# pip install pinecone-client -q
+
+----------------------------------------------
+
+Run the ipython notebook from Google Cloud and prepare the Pinocone cloud index dataset of the embedding vectors.
+
+Langchain_Pinecone_Indexing.ipynb
+from Google drive of AiWiz.
+
+During the execution of this notebook, you need to create the Pinecone index database and store the vector embeddings of the text chunks extracted from the files inside the data folder (our custom data files which will be used as context to ChatGPT during the conversation).
+
+-----------------------------------------------
+
+Then run the main.py file from the local machine.
+
+Open VSCode inside "langchain_pinecone_chatbot" folder.
+Invoke the terminal.
+Run the following >>
+
+python main.py
+
+-----------------------------------------------
+To run the streamlit app
+# streamlit run main.py
